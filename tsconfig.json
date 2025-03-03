@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "bin/*.js",              
+    "src/games/*.js",        
+    "src/cli.js",            
+    "eslint.config.js"       
+  ]
+}
