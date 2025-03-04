@@ -2,7 +2,6 @@ import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
-import { Linter } from 'eslint'
 
 export default [
   stylistic.configs.recommended,
@@ -10,16 +9,14 @@ export default [
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   {
-    files: [
-      '**/*.{js,ts,tsx}',
-    ],
+    files: ['**/*.{js,ts,tsx}'],
   },
   {
     languageOptions: {
       globals: globals.node,
       parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
+        project: './tsconfig.json',
+        tsconfigRootDir: '/Users/anastasiya/Desktop/frontend-project-44',
       },
     },
     rules: {

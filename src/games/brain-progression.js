@@ -20,8 +20,9 @@ export const progressionStart = (name) => {
 
     questionArr.splice(skip, 1, '..')
 
-    console.log(`Question: ${questionArr}`)
-    const userAnswer = Number(readlineSync.question('Your answer: '))
+    console.log(`Question: ${questionArr.join(' ')}`)
+    const userInput = readlineSync.question('Your answer: ')
+    const userAnswer = Number(userInput)
 
     let correctAnswer = answerArr[skip]
 
@@ -31,7 +32,7 @@ export const progressionStart = (name) => {
       win++
     }
     else {
-      console.log(`'${userAnswer.join(' ')}' is wrong answer ;(. Correct answer was '${correctAnswer.join(' ')}'.`)
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)
       return
     }

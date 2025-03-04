@@ -1,21 +1,23 @@
 {
   "compilerOptions": {
-    "skipLibCheck": true,
-    "allowJs": true,
-    "noImplicitAny": false,
-    "checkJs": true,
-    "strict": true,
-    "noEmit": true,
-    "moduleResolution": "Node",
+    "target": "ESNext",
     "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
     "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "skipLibCheck": true,
+    "types": ["node"],
+    "rootDir": "./",
+    "outDir": "./dist",
+    "allowJs": true
   },
   "include": [
-    "bin/*.js",              
-    "src/games/*.js",        
-    "src/cli.js",            
-    "eslint.config.js"       
+    "bin/**/*",
+    "src/**/*",
+    "eslint.config.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
