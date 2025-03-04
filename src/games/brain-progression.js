@@ -31,7 +31,7 @@ export const progressionStart = (name) => {
       win++
     }
     else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
+      console.log(`'${userAnswer.join(' ')}' is wrong answer ;(. Correct answer was '${correctAnswer.join(' ')}'.`)
       console.log(`Let's try again, ${name}!`)
       return
     }

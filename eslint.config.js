@@ -26,4 +26,4 @@ export default [
       '@typescript-eslint/no-unused-vars': 'off',
     },
   },
-] // satisfies Linter.Config[]
+]
