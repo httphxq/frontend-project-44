@@ -24,6 +24,7 @@ export default [
       'no-console': 'off',
       'import/no-unresolved': 'error',
       'import/order': ['error', { 'newlines-between': 'always' }],
+      'import/prefer-default-export': 'off'
     },
   },
 ]
