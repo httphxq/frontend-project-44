@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 export const evenStart = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   const games = 3;
@@ -9,7 +10,7 @@ export const evenStart = (name) => {
     console.log(`Question: ${random}`);
     const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
     const isEven = () => random % 2 === 0;
-    const correctAnswer = isEven(random) ? 'yes' : 'no';
+    const correctAnswer = isEven() ? 'yes' : 'no';
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
       win += 1;

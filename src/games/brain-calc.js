@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+
 export const calcStart = (name) => {
   console.log('What is the result of the expression?');
   const games = 3;
