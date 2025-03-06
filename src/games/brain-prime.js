@@ -20,8 +20,9 @@ export const primeStart = (name) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
-      win += 1
+      return 0
     }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
