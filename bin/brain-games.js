@@ -2,6 +2,4 @@
 
 import { helloUser } from '../src/cli.js'
 
-
 const name = helloUser()
-
