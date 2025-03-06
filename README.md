@@ -18,10 +18,11 @@
    Откройте терминал и выполните:
    git clone https://github.com/httphxq/frontend-project-44.git
    cd frontend-project-44
+   npm install
 
-## Аскинема установки:
+## Аскинемы установки:
 ## https://asciinema.org/a/HISmN3TKmmGhFoFzttVvTcWc5
-
+## https://asciinema.org/a/eSliMrt98vUpe37BviE3yLR9S
 
 ## Аскинемы каждой игры с разным исходом:
 ## https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT
