@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync'
 
-export default progressionStart = (name) => {
+export const progressionStart = (name) => {
   console.log('What number is missing in the progression?');
   const games = 3;
   let win = 0;
