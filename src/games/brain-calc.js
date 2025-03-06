@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const calcStart = (name) => {
+export default calcStart = (name) => {
   console.log('What is the result of the expression?');
   const games = 3;
   let win = 0;
@@ -26,7 +26,7 @@ export const calcStart = (name) => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
 
-      win += 1
+      win += 1;
     }
     else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);

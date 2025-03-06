@@ -1,14 +1,14 @@
 import readlineSync from 'readline-sync';
 
-export const gcdStart = (name) => {
+export default gcdStart = (name) => {
   console.log('Find the greatest common divisor of given numbers.');
   const games = 3;
   let win = 0;
   const factor = 100;
 
   while (games > win) {
-    let randomFirst = Math.floor(Math.random() * factor);
-    let randomSecond = Math.floor(Math.random() * factor);
+    const randomFirst = Math.floor(Math.random() * factor);
+    const randomSecond = Math.floor(Math.random() * factor);
     console.log(`Question: ${randomFirst} ${randomSecond}`);
 
     let a = randomFirst;
