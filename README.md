@@ -16,7 +16,6 @@
 ### Установка
 1. **Клонируйте репозиторий**:
    Откройте терминал и выполните:
-   ```bash
    git clone https://github.com/httphxq/frontend-project-44.git
    cd frontend-project-44
 
