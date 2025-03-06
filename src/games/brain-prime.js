@@ -23,6 +23,5 @@ export const primeStart = (name) => {
       win += 1
     }
   }
-  console.log(`Congratulations, ${name}!`);
 };
 
