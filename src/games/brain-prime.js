@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync'
 
-export const primeStart = (name) => {
+const primeStart = (name) => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   const games = 3;
   let win = 0;
@@ -26,3 +26,4 @@ export const primeStart = (name) => {
   };
   console.log(`Congratulations, ${name}!`);
 };
+export default primeStart;

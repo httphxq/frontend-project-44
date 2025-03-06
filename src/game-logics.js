@@ -23,4 +23,4 @@ const runGame = (gameLogic, name) => {
   };
   console.log(`Congratulations, ${name}!`);
 }
-export { runGame }
+export default runGame;

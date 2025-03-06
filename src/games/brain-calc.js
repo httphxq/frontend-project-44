@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const calcStart = (name) => {
+const calcStart = (name) => {
   console.log('What is the result of the expression?');
   const games = 3;
   let win = 0;
@@ -34,3 +34,4 @@ export const calcStart = (name) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
+export default calcStart;
