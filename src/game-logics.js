@@ -1,6 +1,6 @@
 
 const runGame = (gameLogic, name) => {
-  const win = 0;
+  let win = 0;
   const games = 3;
   while (games > win) {
     const [question, correctAnswer] = gameLogic();
@@ -13,7 +13,7 @@ const runGame = (gameLogic, name) => {
     }
     if (userAnswer === String(correctAnswer)) {
       console.log('Correct!');
-      win=+1;
+      win += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
@@ -22,3 +22,4 @@ const runGame = (gameLogic, name) => {
   };
   console.log(`Congratulations, ${name}!`);
 }
+export { runGame }
