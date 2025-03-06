@@ -20,7 +20,7 @@ export const gcdStart = (name) => {
     const userAnswer = Number(readlineSync.question('Your answer: '));
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
-      win++;
+      win+=1;
     }
     else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
