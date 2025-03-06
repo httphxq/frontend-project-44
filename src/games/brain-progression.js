@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync'
+import readlineSync from 'readline-sync';
 
 const progressionStart = (name) => {
   console.log('What number is missing in the progression?');
@@ -7,15 +7,15 @@ const progressionStart = (name) => {
   const factor = 10;
   const skipFactor = 5;
   while (games > win) {
-    let answerArr = [];
-    let a = (Math.floor(Math.random() * factor));
-    let step = (Math.floor(Math.random() * factor));
+    const answerArr = [];
+    const a = (Math.floor(Math.random() * factor));
+    const step = (Math.floor(Math.random() * factor));
     const b = a + step;
     const c = b + step;
     const d = c + step;
     const e = d + step;
-    answerArr.push (a, b, c, d, e);
-    let questionArr = [...answerArr];
+    answerArr.push(a, b, c, d, e);
+    const questionArr = [...answerArr];
     const skip = (Math.floor(Math.random() * skipFactor));
     questionArr.splice(skip, 1, '..');
     console.log(`Question: ${questionArr.join(' ')}`);
@@ -25,8 +25,7 @@ const progressionStart = (name) => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
       win += 1;
-    }
-    else {
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;

@@ -15,18 +15,15 @@ const calcStart = (name) => {
     let correctAnswer = 0;
     if (randomOperations === '+') {
       correctAnswer = randomFirst + randomSecond;
-    }
-    else if (randomOperations === '-') {
+    } else if (randomOperations === '-') {
       correctAnswer = randomFirst - randomSecond;
-    }
-    else {
+    } else {
       correctAnswer = randomFirst * randomSecond;
     }
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
       win += 1;
-    }
-    else {
+    } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
