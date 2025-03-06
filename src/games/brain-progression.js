@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync'
+
 export const progressionStart = (name) => {
   console.log('What number is missing in the progression?');
   const games = 3;
@@ -23,7 +24,7 @@ export const progressionStart = (name) => {
     const correctAnswer = answerArr[skip];
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
-      win+=1;
+      win += 1;
     }
     else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);

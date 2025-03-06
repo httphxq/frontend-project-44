@@ -1,7 +1,7 @@
 import globals from 'globals'
 import pluginJs from '@eslint/js'
 import tseslint from 'typescript-eslint'
-// import stylistic from '@stylistic/eslint-plugin'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default [
   pluginJs.configs.recommended,
@@ -22,18 +22,22 @@ export default [
       }
     },
     rules: {
-      '@stylistic/semi': 'off',
-      '@stylistic/eol-last': ['error', 'always'],
-      '@typescript-eslint/no-unused-vars': 'off',
+      '@stylistic/semi': 'off', 
+      '@stylistic/eol-last': ['error', 'always'], 
+      '@typescript-eslint/no-unused-vars': 'off', 
       '@stylistic/no-trailing-spaces': 'warn',
       '@stylistic/no-multiple-empty-lines': ['warn', { max: 2 }],
-      '@stylistic/brace-style': 'off',
+      '@stylistic/brace-style': 'off', 
       '@stylistic/max-len': ['warn', { code: 120 }],
-      'import/newline-after-import': 'off',
-      'no-undef': 'off',
-      'no-extra-semi': 'off', 
+      'import/newline-after-import': 'off', 
+      'import/prefer-default-export': 'off', 
+      'no-undef': 'off', 
+      'no-const-assign': 'error', 
       'space-infix-ops': 'off', 
-      'no-const-assign': 'error'
+      'no-extra-semi': 'off', 
+      'prefer-const': 'off', 
+      'no-spaced-func': 'off',
+      'func-call-spacing': 'off'
     }
   }
 ]
