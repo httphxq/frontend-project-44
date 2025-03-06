@@ -1,39 +1,29 @@
-import globals from 'globals'
-import pluginJs from '@eslint/js'
-import tseslint from 'typescript-eslint'
-// import stylistic from '@stylistic/eslint-plugin'
+import globals from 'globals';
+import pluginJs from '@eslint/js';
+import pluginImport from 'eslint-plugin-import';
 
 export default [
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.stylisticTypeChecked,
   {
-    files: ['**/*.{js,ts,tsx}']
-  },
-  {
-    ignores: ['dist/']
+    files: ['**/*.{js,mjs,cjs}'],
   },
   {
     languageOptions: {
-      globals: globals.node,
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname
-      }
+      globals: {
+        ...globals.node,
+      },
+      ecmaVersion: 2021,
+      sourceType: 'module',
+    },
+  },
+  pluginJs.configs.recommended,
+  {
+    plugins: {
+      import: pluginImport,
     },
     rules: {
-      '@stylistic/semi': 'off',
-      '@stylistic/eol-last': ['error', 'always'],
-      '@typescript-eslint/no-unused-vars': 'off',
-      '@stylistic/no-trailing-spaces': 'warn',
-      '@stylistic/no-multiple-empty-lines': ['warn', { max: 2 }],
-      '@stylistic/brace-style': 'off',
-      '@stylistic/max-len': ['warn', { code: 120 }],
-      'import/newline-after-import': 'off',
-      'no-undef': 'off',
-      'no-extra-semi': 'off', 
-      'space-infix-ops': 'off', 
-      'no-const-assign': 'error'
-    }
-  }
-]
+      'no-console': 'off',
+      'import/no-unresolved': 'error',
+      'import/order': ['error', { 'newlines-between': 'always' }],
+    },
+  },
+];

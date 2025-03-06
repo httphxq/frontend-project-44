@@ -1,3 +1,4 @@
+import readlineSync from 'readline-sync';
 
 const runGame = (gameLogic, name) => {
   let win = 0;
