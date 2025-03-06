@@ -4,11 +4,13 @@ export const progressionStart = (name) => {
   console.log('What number is missing in the progression?')
   const games = 3
   let win = 0
+  const factor = 10
+  const skipFactor = 5
   while (games > win) {
     let answerArr = []
 
-    let a = (Math.floor(Math.random() * 10))
-    let step = (Math.floor(Math.random() * 10))
+    let a = (Math.floor(Math.random() * factor))
+    let step = (Math.floor(Math.random() * factor))
     let b = a + step
     let c = b + step
     let d = c + step
@@ -16,7 +18,7 @@ export const progressionStart = (name) => {
     answerArr.push (a, b, c, d, e)
 
     let questionArr = [...answerArr]
-    let skip = (Math.floor(Math.random() * 5))
+    let skip = (Math.floor(Math.random() * skipFactor))
 
     questionArr.splice(skip, 1, '..')
 

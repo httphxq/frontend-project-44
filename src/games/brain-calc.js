@@ -4,10 +4,11 @@ export const calcStart = (name) => {
   console.log('What is the result of the expression?')
   const games = 3
   let win = 0
+  const factor = 100
   const operations = ['+', '-', '*']
   while (games > win) {
-    const randomFirst = Math.floor(Math.random() * 100)
-    const randomSecond = Math.floor(Math.random() * 100)
+    const randomFirst = Math.floor(Math.random() * factor)
+    const randomSecond = Math.floor(Math.random() * factor)
     const randomOperations = operations[Math.floor(Math.random() * operations.length)]
     console.log(`Question: ${randomFirst} ${randomOperations} ${randomSecond}`)
     const userAnswer = Number(readlineSync.question('Your answer: '))
