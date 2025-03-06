@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync'
-
 export const progressionStart = (name) => {
   console.log('What number is missing in the progression?');
   const games = 3;
@@ -8,7 +7,6 @@ export const progressionStart = (name) => {
   const skipFactor = 5;
   while (games > win) {
     let answerArr = [];
-
     let a = (Math.floor(Math.random() * factor));
     let step = (Math.floor(Math.random() * factor));
     let b = a + step;
@@ -16,21 +14,15 @@ export const progressionStart = (name) => {
     let d = c + step;
     let e = d + step;
     answerArr.push (a, b, c, d, e);
-
     let questionArr = [...answerArr];
     let skip = (Math.floor(Math.random() * skipFactor));
-
     questionArr.splice(skip, 1, '..');
-
     console.log(`Question: ${questionArr.join(' ')}`);
     const userInput = readlineSync.question('Your answer: ');
     const userAnswer = Number(userInput);
-
     let correctAnswer = answerArr[skip];
-
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
-
       win++;
     }
     else {

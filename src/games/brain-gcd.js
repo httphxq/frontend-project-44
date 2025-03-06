@@ -5,12 +5,10 @@ export const gcdStart = (name) => {
   const games = 3;
   let win = 0;
   const factor = 100;
-
   while (games > win) {
     const randomFirst = Math.floor(Math.random() * factor);
     const randomSecond = Math.floor(Math.random() * factor);
     console.log(`Question: ${randomFirst} ${randomSecond}`);
-
     let a = randomFirst;
     let b = randomSecond;
     while (b !== 0) {
@@ -19,12 +17,9 @@ export const gcdStart = (name) => {
       a = c;
     };
     const correctAnswer = a;
-
     const userAnswer = Number(readlineSync.question('Your answer: '));
-
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
-
       win++;
     }
     else {
