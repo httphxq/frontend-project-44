@@ -22,7 +22,6 @@ export const primeStart = (name) => {
     else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`)
       console.log(`Let's try again, ${name}!`)
-      return
     }
   }
   console.log(`Congratulations, ${name}!`)
