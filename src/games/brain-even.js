@@ -22,4 +22,4 @@ export const evenStart = (name) => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-}
+};

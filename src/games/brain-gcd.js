@@ -12,7 +12,7 @@ export const gcdStart = (name) => {
     let a = randomFirst;
     let b = randomSecond;
     while (b !== 0) {
-      let c = b;
+      const c = b;
       b = a % b;
       a = c;
     }
@@ -29,4 +29,4 @@ export const gcdStart = (name) => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-}
+};

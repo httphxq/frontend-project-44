@@ -33,4 +33,4 @@ export const calcStart = (name) => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-}
+};
