@@ -1,6 +1,8 @@
 #!/usr/bin/env node
+
 import helloUser from '../src/cli.js';
-import gcdStart from '../src/games/brain-gcd.js';
+import runGame from '../src/index.js';
+import game from '../src/games/brain-gcd.js';
 
 const name = helloUser();
-gcdStart(name);
+runGame(game.description, game.gameLogic, name);

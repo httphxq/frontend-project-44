@@ -1,6 +1,8 @@
 #!/usr/bin/env node
+
 import helloUser from '../src/cli.js';
-import evenStart from '../src/games/brain-even.js';
+import runGame from '../src/index.js';
+import game from '../src/games/brain-even.js';
 
 const name = helloUser();
-evenStart(name);
+runGame(game.description, game.gameLogic, name);

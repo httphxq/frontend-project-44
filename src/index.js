@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const runGame = (gameLogic, name) => {
+const games = 3;
+const runGame = (description, gameLogic, name) => {
+  console.log(description);
   let win = 0;
-  const games = 3;
   while (games > win) {
     const [question, correctAnswer] = gameLogic();
     console.log(`Question: ${question}`);

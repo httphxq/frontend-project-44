@@ -1,36 +1,18 @@
-import readlineSync from 'readline-sync';
+import getRandomNumber from '../utils.js';
 
-const progressionStart = (name) => {
-  console.log('What number is missing in the progression?');
-  const games = 3;
-  let win = 0;
-  const factor = 10;
-  const skipFactor = 5;
-  while (games > win) {
-    const answerArr = [];
-    const a = (Math.floor(Math.random() * factor));
-    const step = (Math.floor(Math.random() * factor));
-    const b = a + step;
-    const c = b + step;
-    const d = c + step;
-    const e = d + step;
-    answerArr.push(a, b, c, d, e);
-    const questionArr = [...answerArr];
-    const skip = (Math.floor(Math.random() * skipFactor));
-    questionArr.splice(skip, 1, '..');
-    console.log(`Question: ${questionArr.join(' ')}`);
-    const userInput = readlineSync.question('Your answer: ');
-    const userAnswer = Number(userInput);
-    const correctAnswer = answerArr[skip];
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-      win += 1;
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
-    }
+const description = 'What number is missing in the progression?';
+const gameLogic = () => {
+  const length = 10;
+  const start = getRandomNumber(50);
+  const step = getRandomNumber(10) + 1;
+  const hiddenIndex = getRandomNumber(length);
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + step * i);
   }
-  console.log(`Congratulations, ${name}!`);
+  const correctAnswer = progression[hiddenIndex];
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
+  return [question, correctAnswer];
 };
-export default progressionStart;
+export default { description, gameLogic };

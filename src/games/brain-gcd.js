@@ -1,32 +1,23 @@
-import readlineSync from 'readline-sync';
+import getRandomNumber from '../utils.js';
 
-const gcdStart = (name) => {
-  console.log('Find the greatest common divisor of given numbers.');
-  const games = 3;
-  let win = 0;
-  const factor = 100;
-  while (games > win) {
-    const randomFirst = Math.floor(Math.random() * factor);
-    const randomSecond = Math.floor(Math.random() * factor);
-    console.log(`Question: ${randomFirst} ${randomSecond}`);
-    let a = randomFirst;
-    let b = randomSecond;
-    while (b !== 0) {
-      const c = b;
-      b = a % b;
-      a = c;
-    }
-    const correctAnswer = a;
-    const userAnswer = Number(readlineSync.question('Your answer: '));
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-      win += 1;
+const description = 'Find the greatest common divisor of given numbers.';
+const getGCD = (num1, num2) => {
+  let a = num1;
+  let b = num2;
+  while (a !== b) {
+    if (a > b) {
+      a -= b;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      console.log(`Let's try again, ${name}!`);
-      return;
+      b -= a;
     }
   }
-  console.log(`Congratulations, ${name}!`);
+  return a;
 };
-export default gcdStart;
+const gameLogic = () => {
+  const num1 = getRandomNumber(100);
+  const num2 = getRandomNumber(100);
+  const question = `${num1} ${num2}`;
+  const correctAnswer = getGCD(num1, num2);
+  return [question, correctAnswer];
+};
+export default { description, gameLogic };

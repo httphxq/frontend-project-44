@@ -1,6 +1,8 @@
 #!/usr/bin/env node
+
 import helloUser from '../src/cli.js';
-import progressionStart from '../src/games/brain-progression.js';
+import runGame from '../src/index.js';
+import game from '../src/games/brain-progression.js';
 
 const name = helloUser();
-progressionStart(name);
+runGame(game.description, game.gameLogic, name);
