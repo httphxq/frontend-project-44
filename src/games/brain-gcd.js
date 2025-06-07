@@ -18,6 +18,6 @@ const gameLogic = () => {
   const num2 = getRandomNumber(100)
   const question = `${num1} ${num2}`
   const correctAnswer = getGCD(num1, num2)
-  return [question, correctAnswer]
+  return [question, correctAnswer];
 }
 export default { description, gameLogic }
