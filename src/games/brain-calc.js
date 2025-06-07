@@ -4,7 +4,7 @@ const description = 'What is the result of the expression?'
 const getRandomOperation = () => {
   const operations = ['+', '-', '*']
   return operations[getRandomNumber(3)]
-};
+}
 const calculate = (num1, num2, operation) => {
   if (operation === '+') {
     return num1 + num2

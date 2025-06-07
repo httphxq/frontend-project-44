@@ -8,7 +8,7 @@ const isPrime = (num) => {
   let i = 2
   while (i * i <= num) {
     if (num % i === 0) {
-      return false;
+      return false
     }
     i += 1
   }

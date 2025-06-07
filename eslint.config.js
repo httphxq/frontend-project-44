@@ -1,6 +1,6 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
-import pluginImport from 'eslint-plugin-import';
+import globals from 'globals'
+import pluginJs from '@eslint/js'
+import pluginImport from 'eslint-plugin-import'
 
 export default [
   {
@@ -27,4 +27,4 @@ export default [
       'import/prefer-default-export': 'off',
     },
   },
-];
+]
