@@ -25,12 +25,8 @@
 ## https://asciinema.org/a/eSliMrt98vUpe37BviE3yLR9S
 
 ## Аскинемы каждой игры с разным исходом:
-
-<a href="https://asciinema.org/a/mnjMYEUsKe29TwM3AyC1GEaj1" target="_blank"><img src="https://asciinema.org/a/mnjMYEUsKe29TwM3AyC1GEaj1.svg" /></a>
-
 ## https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT
 ## https://asciinema.org/a/GhSvwmdOh9o0OJL9ZPNDkdZm7
 ## https://asciinema.org/a/W5wrfdRiwOj7w5IilyhDf21X3
 ## https://asciinema.org/a/xUug9dInjHDdpEL0hjvHrxIkr
 ## https://asciinema.org/a/mnjMYEUsKe29TwM3AyC1GEaj1
-
