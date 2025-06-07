@@ -25,7 +25,9 @@
 ## https://asciinema.org/a/eSliMrt98vUpe37BviE3yLR9S
 
 ## Аскинемы каждой игры с разным исходом:
-## https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT
+## Brain even
+<img src="https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT" alt="Описание изображения" />
+
 ## https://asciinema.org/a/GhSvwmdOh9o0OJL9ZPNDkdZm7
 ## https://asciinema.org/a/W5wrfdRiwOj7w5IilyhDf21X3
 ## https://asciinema.org/a/xUug9dInjHDdpEL0hjvHrxIkr
