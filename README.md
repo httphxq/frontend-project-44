@@ -25,10 +25,20 @@
 ## https://asciinema.org/a/eSliMrt98vUpe37BviE3yLR9S
 
 ## Аскинемы каждой игры с разным исходом:
-## Brain even
-<img src="https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT" alt="Описание изображения" />
+
 
 ## https://asciinema.org/a/GhSvwmdOh9o0OJL9ZPNDkdZm7
 ## https://asciinema.org/a/W5wrfdRiwOj7w5IilyhDf21X3
 ## https://asciinema.org/a/xUug9dInjHDdpEL0hjvHrxIkr
 ## https://asciinema.org/a/mnjMYEUsKe29TwM3AyC1GEaj1
+
+# Brain-calc
+![Brain-calc](https://asciinema.org/a/GhSvwmdOh9o0OJL9ZPNDkdZm7)
+# Brain-even
+![Brain-even](https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT)
+# Brain-gcd
+![Brain-gcd](https://asciinema.org/a/W5wrfdRiwOj7w5IilyhDf21X3)
+# Brain-prime
+![Brain-prime](https://asciinema.org/a/xUug9dInjHDdpEL0hjvHrxIkr)
+# Brain-progression
+![Brain-progression](https://asciinema.org/a/xUug9dInjHDdpEL0hjvHrxIkr)
