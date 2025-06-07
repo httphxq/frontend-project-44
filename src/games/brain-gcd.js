@@ -7,7 +7,8 @@ const getGCD = (num1, num2) => {
   while (a !== b) {
     if (a > b) {
       a -= b
-    } else {
+    }
+    else {
       b -= a
     }
   }
