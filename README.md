@@ -25,8 +25,13 @@
 ## https://asciinema.org/a/eSliMrt98vUpe37BviE3yLR9S
 
 ## Аскинемы каждой игры с разным исходом:
-## https://asciinema.org/a/6JCiHUcGHSkBDOdqFHrdc4uwT
-## https://asciinema.org/a/GhSvwmdOh9o0OJL9ZPNDkdZm7
-## https://asciinema.org/a/W5wrfdRiwOj7w5IilyhDf21X3
-## https://asciinema.org/a/xUug9dInjHDdpEL0hjvHrxIkr
-## https://asciinema.org/a/mnjMYEUsKe29TwM3AyC1GEaj1
+## Brain-prime
+!<img width="507" alt="Image" src="https://github.com/user-attachments/assets/17eaac62-dbd8-4d3a-88c2-7aa983f4783b" />
+## Brain-progression
+!<img width="561" alt="Image" src="https://github.com/user-attachments/assets/21341d4d-6215-42b8-b1bd-0b8bbf51c066" />
+## Brain-gcd
+!<img width="553" alt="Image" src="https://github.com/user-attachments/assets/2069a2ac-5262-4228-81d5-b40a24a64d6e" />
+## Brain-calc
+!<img width="562" alt="Image" src="https://github.com/user-attachments/assets/174d78ac-122f-4c93-b056-024753fdb8df" />
+## Brain-even
+!<img width="553" alt="Image" src="https://github.com/user-attachments/assets/3a275024-0082-49b8-ab9a-bca0384b4a07" />
